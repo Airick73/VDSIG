@@ -1,5 +1,22 @@
 <!DOCTYPE html>
 {% extends "basicapp/base.html" %}
 {% block body_block %}
-    <h1>Signup</h1>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <!--<div class="flex lg:flex-row flex-col lg:space-x-2">
+        <input type="text" placeholder="First Name"  class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800" style="border: 1px solid #d3d5d8 !important;">
+        <input type="text" placeholder="Last Name" class="bg-gray-200 mb-2 shadow-none  dark:bg-gray-800" style="border: 1px solid #d3d5d8 !important;">
+    </div>-->
+    <input type="text" name="username" placeholder="Username" class"" style="border: 1px solid #d3d5d8 !important;">
+    <input type="email" name="email" placeholder="Email" class=" style="border: 1px solid #d3d5d8 !important;">
+    <input type="password" name="password" placeholder="Password" class="" style="border: 1px solid #d3d5d8 !important;">
+    <input type="password" name="password2" placeholder="Confirm Password" class="" style="border: 1px solid #d3d5d8 !important;">
+   
+    <button type="submit" class="btn btn-primary bg-black">Sign Up</button>
+    <div class="text-center mt-5 space-x-2">
+        <p class="text-base"> Do you have an account? <a href="/signin"> Login </a></p>
+    </div>
+</form>
+
 {% endblock %}

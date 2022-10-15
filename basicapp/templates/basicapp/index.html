@@ -1,7 +1,31 @@
 <!DOCTYPE html>
 {% extends "basicapp/base.html" %}
 {% block body_block %}
-    <h1 class="font-semibold text-3xl">Home page</h1>
-    <p class="text-purple-600">WHat color is this</p>
-    <p>CHANGE</p>
+    <h1 class="">VDSIG Home page</h1>
+    <br>
+    <br>
+    <br>
+    <!-- login -->
+    <form>
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <input type="email" id="form2Example1" class="form-control" />
+          <label class="form-label" for="form2Example1">Email address</label>
+        </div>
+      
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+          <input type="password" id="form2Example2" class="form-control" />
+          <label class="form-label" for="form2Example2">Password</label>
+        </div>
+      
+        <!-- Submit button -->
+        <button type="button" class="bg-black   btn btn-primary btn-block mb-4">Sign in</button>
+      
+        <!-- Register buttons -->
+        <div class="text-center">
+        <p><a href="{% url 'basicapp:signup' %}">Sign up page</a></p>
+        </div>
+      </form>
+    
 {% endblock %}
