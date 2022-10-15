@@ -40,9 +40,6 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "basicapp",
-    "tailwind",
-    "tailwindapp",
-    "django_browser_reload",
 ]
 
 MIDDLEWARE = [
@@ -104,9 +101,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-INTERNAL_IPS = [
-    "127.0.0.1",
-]
+# INTERNAL_IPS = [
+#     "127.0.0.1",
+# ]
 
 LANGUAGE_CODE = "en-us"
 
